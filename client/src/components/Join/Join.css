@@ -1,0 +1,48 @@
+.join-outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #283e4a;
+}
+
+.join-inner-container {
+    min-width: 320px;
+}
+
+.input-from {
+    min-width: 320px;
+}
+
+.join-input {
+    border-radius: 0;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.heading {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bolder;
+    background: #0073b1;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+}
+
+.button:hover {
+    cursor: pointer;
+}
