@@ -6,8 +6,9 @@ import Modal from '../Modal/Modal';
 import './Video.css';
 import multimediaIcon from '../../assets/icons/multimedia.png';
 
-const Video = () => {
+const Video = ({ playing, setPlaying }) => {
     const [open, setOpen] = useState(false);
+
 
     return (
         <Fragment>
@@ -16,17 +17,21 @@ const Video = () => {
             </div>
             <Modal
                 show={open}
-                width={320}
+                width={'80%'}
                 onHide={() => { setOpen(false) }}
                 title = {""}
             >
                 <ReactPlayer 
                     url='https://www.youtube.com/watch?v=wEERFBI9eCg&ab_channel=Nightwish'
-                    playing={ true }
+                    playing={ playing }
+                    onPause={ () =>  setPlaying(false) }
+                    onPlay={ () => setPlaying(true) }
                     loop={ true }
-                    width={ '320px' }
+                    width={ '100%' }
+                    className={ 'player-box' }
+                    config={{ youtube: { playerVars: { disablekb: 1 } }}}
                 />
-            </Modal>                   
+            </Modal>
         </Fragment>
     )
 }

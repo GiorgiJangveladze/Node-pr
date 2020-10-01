@@ -17,13 +17,16 @@
 
 .custom-modal-wrapper {
     color: #7a8a90;
-    padding: 21px 26px;
-    border: 2px solid #0073b1;
+    /* border: 2px solid #0073b1; */
     border-radius: 6px 6px 0 0;
     background-color: white;
     position: fixed;
-    left: 50%;
     z-index: 9999;
+    left: 50%;
+    top: 50%;
+    min-width: 320px;
+    max-width: 620px;
+    transform: translate(-50%, -50%);
     transition: all 0.5s;
 }
 
@@ -49,10 +52,6 @@
 
 .custom-modal-wrapper .custom-modal-header {
     width: 100%;
-    height: 22px;
-    padding: 0px;
-    /* margin-bottom: 21px; */
-    margin-bottom: 10px;
     border: none;
     position: relative;
 }
